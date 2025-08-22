@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recipe Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Ingredient Manager</h2>
+    <input type="text" id="ingredientName" placeholder="Ingredient name">
+    <button onclick="addIngredient()">Add Ingredient</button>
+    <ul id="ingredientList"></ul>
+
+    <h2>Generate Recipe</h2>
+    <button onclick="generateRecipe()">Generate AI Recipe</button>
+    <div id="recipeOutput"></div>
+
+    <button onclick="logout()">Logout</button>
+</div>
+<script src="script.js"></script>
+<script>
+    getIngredients(); // Load ingredients on page load
+</script>
+</body>
+</html>
